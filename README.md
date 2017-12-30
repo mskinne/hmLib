@@ -8,6 +8,10 @@ The following sites were used to get some ideas for structure for V1 of this pro
 * [Build Your First JavaScript Library](https://code.tutsplus.com/tutorials/build-your-first-javascript-library--net-26796)
 * [Creating your own JavaScript Library](http://www.mikedoesweb.com/2012/creating-your-own-javascript-library/)
 
+## Licence
+
+This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details
+
 ## What Does HM Stand For?
 
 This is a reference to my personal website [HokieMatt.com](https://hokiematt.com) which is also the moniker I use to identify projects I work on.
