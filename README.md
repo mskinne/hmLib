@@ -4,4 +4,4 @@ This is a simple DOM manipulation Javascript library with the goal of being ligh
 
 ## What Does HM Stand For?
 
-This is a reference to my personal website [HokieMatt.com](HokieMatt.com) which is also the moniker I use to identify projects I work on.
+This is a reference to my personal website [HokieMatt.com](https://hokiematt.com) which is also the moniker I use to identify projects I work on.
