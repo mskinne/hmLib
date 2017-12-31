@@ -1,0 +1,27 @@
+{
+  "name": "hmlib",
+  "version": "0.0.1",
+  "description": "A lightweigth, modular DOM manipulation JS library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mskinne/hmLib.git"
+  },
+  "keywords": [
+    "javascript",
+    "DOM",
+    "manipulation"
+  ],
+  "author": "Matt Skinner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mskinne/hmLib/issues"
+  },
+  "homepage": "https://github.com/mskinne/hmLib#readme",
+  "dependencies": {
+    "browserify": "^14.5.0"
+  }
+}
