@@ -33,28 +33,35 @@ Here is the default build.josn:
 
 ```json
 {
-	"functions": {
+  "functions": {
 
-		"core": [
+    "core": [
 
-			"argToArr",
-			"forEach",
-			"map",
-			"mapOne"
+      "argToArr",
+      "forEach",
+      "map",
+      "mapOne"
 
-		],
+    ],
 
-		"class": [
+    "class": [
 
-			"addClass",
-			"changeClass",
-			"hasClass",
-			"removeClass",
-			"toggleClass"
+      "addClass",
+      "changeClass",
+      "hasClass",
+      "removeClass",
+      "toggleClass"
 
-		]
-		
-	}
+    ],
+
+    "handler": [
+
+      "click",
+      "on"
+
+    ]
+    
+  }
 }
 ```
 

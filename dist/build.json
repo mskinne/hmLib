@@ -1,31 +1,31 @@
 {
-	"functions": {
+  "functions": {
 
-		"core": [
+    "core": [
 
-			"argToArr",
-			"forEach",
-			"map",
-			"mapOne"
+      "argToArr",
+      "forEach",
+      "map",
+      "mapOne"
 
-		],
+    ],
 
-		"class": [
+    "class": [
 
-			"addClass",
-			"changeClass",
-			"hasClass",
-			"removeClass",
-			"toggleClass"
+      "addClass",
+      "changeClass",
+      "hasClass",
+      "removeClass",
+      "toggleClass"
 
-		],
+    ],
 
-		"handler": [
+    "handler": [
 
-			"click",
-			"on"
+      "click",
+      "on"
 
-		]
-		
-	}
+    ]
+    
+  }
 }
