@@ -1,7 +1,7 @@
 {
   "name": "hmlib",
   "version": "0.0.1",
-  "description": "A lightweigth, modular DOM manipulation JS library",
+  "description": "A lightweight, modular DOM manipulation JS library",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,8 @@
   "keywords": [
     "javascript",
     "DOM",
-    "manipulation"
+    "manipulation",
+    "lightweight"
   ],
   "author": "Matt Skinner",
   "license": "MIT",
