@@ -1,0 +1,24 @@
+{
+	"functions": {
+
+		"core": [
+
+			"argToArr",
+			"forEach",
+			"map",
+			"mapOne"
+
+		],
+
+		"class": [
+
+			"addClass",
+			"changeClass",
+			"hasClass",
+			"removeClass",
+			"toggleClass"
+
+		]
+		
+	}
+}
