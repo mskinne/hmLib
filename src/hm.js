@@ -1,4 +1,4 @@
-/*!
+/*
  * HM Javascript Library v.0.0.1
  * https://hokiematt.com
  *
@@ -9,8 +9,16 @@
  *
  */
 
+/** Creates Project */
+
 (function(window) {
   hmLib = function(selector) {
+
+     /**
+      * Abstracts DOM node selection to hm(selector)
+      * @param {string} selector - A valid CSS selector.
+      * @return {object} hm - An ojbect containing the selected elements.
+      */
 
     if (selector) {
 
