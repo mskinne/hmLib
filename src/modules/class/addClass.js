@@ -1,8 +1,15 @@
-  // Add HTML classes
+/**
+ * Add a class or classes to selected nodes
+ * @memberof HMLib
+ * @param {(string|string[])} classes valid CSS class names
+ * @returns {object} DOM NodeList of nodes matching selector after class(es) are added
+ */
 
 /*jshint -W025 */
-function (classes) {
+/*jshint -W028 */
+addClass: function (classes) {
 /*jshint +W025 */
+/*jshint +W028 */
   var className = this.argToArr(classes);
 
   return this.forEach( function (el) {

@@ -79,6 +79,10 @@ module.exports = function (grunt) {
       dist: {
 
         src: [ paths.dist + '/*.js', paths.dist + '/*.map' ]
+      },
+
+      docs: {
+        src: [ 'docs/' ]
       }
     },
 
@@ -108,7 +112,7 @@ module.exports = function (grunt) {
           wrapper: function(filepath){
             filename = filepath.replace(/([A-Za-z0-9_]*\/)*/, "");
             filename = filename.replace(/(.js)$/, "");
-            return [filename + ': ', ','];
+            return ['', ','];
           }
         }
       }
@@ -136,6 +140,17 @@ module.exports = function (grunt) {
         src: [paths.devRelease],
         dest: paths.minRelease
       }
+    },
+
+    documentation: {
+        default: {
+            files: [{
+                "src": paths.devRelease
+            }],
+            options: {
+                destination: "docs"
+            }
+        },
     }
   });
 
@@ -154,6 +169,7 @@ module.exports = function (grunt) {
       'uglify',
       'copy:development',
       'copy:minified',
+      'documentation:default',
       'clean:afbuild'
     ]
   );
@@ -162,7 +178,8 @@ module.exports = function (grunt) {
     'devclean', 
     [ 
       'clean:afbuild',
-      'clean:dist'
+      'clean:dist',
+      'clean:docs'
     ]
   );
 

@@ -31,6 +31,7 @@
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-qunit": "^2.0.0",
     "grunt-contrib-uglify": "^3.3.0",
+    "grunt-documentation": "^1.2.3",
     "grunt-text-replace": "^0.4.0",
     "grunt-wrap": "^0.3.1",
     "load-grunt-configs": "^1.0.0",

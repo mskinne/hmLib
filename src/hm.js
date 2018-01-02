@@ -10,7 +10,15 @@
  */
 
 (function(window) {
-  hmLib = function(selector) {
+
+  /**
+   * Library constructor class
+   * @class hmLib
+   * @constructor
+   * @param {(string|object)} selector a valid CSS selector
+   * @returns {object} DOM NodeList of nodes matching selector 
+   */
+  HMLib = function(selector) {
 
     if (selector) {
 
@@ -51,13 +59,13 @@
 
   };
 
-  hmLib.prototype = {
+  HMLib.prototype = {
 
     // @CODE
     // Function definitions go here
 
   };
 
-  window.hm = hmLib;
+  window.hm = HMLib;
 
 }(window));
