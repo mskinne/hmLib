@@ -166,11 +166,17 @@ module.exports = function (grunt) {
     ]
   );
 
-    grunt.registerTask(
+  grunt.registerTask(
     'devclean', 
     [ 
       'clean:afbuild',
       'clean:dist'
     ]
   );
+
+  grunt.registerTask(
+    'default', 
+    'build'
+  );
+
 }
