@@ -21,8 +21,7 @@ module.exports = function (grunt) {
     sourceMapMin: 'dist/source-map-' + templates.name + '.min.js.map',
 
     lDevRelease: 'dist/' + templates.latest + '.js',
-    lMinRelease: 'dist/' + templates.latest + '.min.js',
-    lSourceMapMin: 'dist/source-map-' + templates.latest + '.min.js.map'
+    lMinRelease: 'dist/' + templates.latest + '.min.js'
   },
 
   buildfunctions = [],
@@ -62,13 +61,7 @@ module.exports = function (grunt) {
       minified: {
         src: paths.minRelease,
         dest: paths.lMinRelease
-      },
-
-      smMinified: {
-        src: paths.sourceMapMin,
-        dest: paths.lSourceMapMin
       }
-
     },
 
     clean: {
@@ -161,7 +154,6 @@ module.exports = function (grunt) {
       'uglify',
       'copy:development',
       'copy:minified',
-      'copy:smMinified',
       'clean:afbuild'
     ]
   );
