@@ -1,7 +1,7 @@
 {
   "name": "hmlib",
   "version": "0.0.1",
-  "description": "A lightweigth, modular DOM manipulation JS library",
+  "description": "A lightweight, modular DOM manipulation JS library",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +13,8 @@
   "keywords": [
     "javascript",
     "DOM",
-    "manipulation"
+    "manipulation",
+    "lightweight"
   ],
   "author": "Matt Skinner",
   "license": "MIT",
@@ -30,6 +31,7 @@
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-qunit": "^2.0.0",
     "grunt-contrib-uglify": "^3.3.0",
+    "grunt-documentation": "^1.2.3",
     "grunt-text-replace": "^0.4.0",
     "grunt-wrap": "^0.3.1",
     "load-grunt-configs": "^1.0.0",

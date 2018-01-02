@@ -1,6 +1,16 @@
+/**
+ * Change a class or classes on selected nodes
+ * @memberof HMLib
+ * @param {(string|string[])} classes valid CSS class names
+ * @param {string} [operation=add] change operation ("```add```"" or "```remove```"")
+ * @returns {object} DOM NodeList of nodes matching selector after class(es) are added
+ */
+
 /*jshint -W025 */
-function (classes, operation) {
+/*jshint -W028 */
+changeClass: function (classes, operation) {
 /*jshint +W025 */
+/*jshint +W028 */
   var className = this.argToArr(classes);
   operation = (typeof operation !== 'undefined') ?  operation : "add";
 
