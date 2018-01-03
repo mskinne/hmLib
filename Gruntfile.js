@@ -79,10 +79,6 @@ module.exports = function (grunt) {
       dist: {
 
         src: [ paths.dist + '/*.js', paths.dist + '/*.map' ]
-      },
-
-      docs: {
-        src: [ 'docs/' ]
       }
     },
 
@@ -169,7 +165,6 @@ module.exports = function (grunt) {
       'uglify',
       'copy:development',
       'copy:minified',
-      'documentation:default',
       'clean:afbuild'
     ]
   );
@@ -178,8 +173,7 @@ module.exports = function (grunt) {
     'devclean', 
     [ 
       'clean:afbuild',
-      'clean:dist',
-      'clean:docs'
+      'clean:dist'
     ]
   );
 
