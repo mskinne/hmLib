@@ -10,20 +10,16 @@
 
     ],
 
-    "class": [
+    "dom": [
 
       "addClass",
+      "attr",
       "changeClass",
       "hasClass",
-      "removeClass",
-      "toggleClass"
-
-    ],
-
-    "content": [
-
       "html",
-      "text"
+      "removeClass",
+      "text",
+      "toggleClass"
 
     ],
 
