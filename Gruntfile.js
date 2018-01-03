@@ -144,7 +144,8 @@ module.exports = function (grunt) {
                 "src": paths.devRelease
             }],
             options: {
-                destination: "docs"
+                destination: "docs",
+                name: "HM Javascript Library"
             }
         },
     }
@@ -165,7 +166,6 @@ module.exports = function (grunt) {
       'uglify',
       'copy:development',
       'copy:minified',
-      'documentation:default',
       'clean:afbuild'
     ]
   );
@@ -181,6 +181,13 @@ module.exports = function (grunt) {
   grunt.registerTask(
     'default', 
     'build'
+  );
+
+  grunt.registerTask(
+    'builddocs', 
+    [
+      'documentation:default'
+    ]
   );
 
 }

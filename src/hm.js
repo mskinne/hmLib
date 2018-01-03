@@ -9,8 +9,6 @@
  *
  */
 
-/** Creates Project */
-
 (function(window) {
 
   /**
