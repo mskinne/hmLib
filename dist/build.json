@@ -20,6 +20,13 @@
 
     ],
 
+    "content": [
+
+      "html",
+      "text"
+
+    ],
+
     "handler": [
 
       "click",
