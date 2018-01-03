@@ -12,6 +12,6 @@ on: function (event, callback) {
 /*jshint +W025 */
 /*jshint +W028 */
   return this.forEach(function (el) {
-      el.addEventListener(event, callback);
+      el.addEventListener(event, callback, false);
   });
 }
