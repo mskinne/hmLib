@@ -32,7 +32,7 @@
 
       // Recursivly add library object if the scope is "window"
       if (window === this) {
-        return new hmLib(selector);
+        return new HMLib(selector);
       }
 
       var els, 
@@ -62,7 +62,7 @@
 
     } else {
     // Return the <html> object if no selector is specified
-      return new hmLib("html");
+      return new HMLib("html");
     }
 
   };
