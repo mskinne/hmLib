@@ -165,6 +165,7 @@ module.exports = function (grunt) {
       'uglify',
       'copy:development',
       'copy:minified',
+      'documentation:default',
       'clean:afbuild'
     ]
   );
