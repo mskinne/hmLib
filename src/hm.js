@@ -1,12 +1,11 @@
 /*
- * HM Javascript Library v.0.0.1
+ * @file A simple DOM manipulation Javascript library with the goal of being lightweight and modular
+ * @author <a href="mailto:matt@hokiematt.com">Matt Skinner</a>
+ * HM Javascript Library 
+ * @version 0.0.1
  * https://hokiematt.com
- *
- * A simple DOM manipulation Javascript library with the goal of being lightweight and modular
- *
- * Copyright Matt Skinner
- * matt@hokiematt.com
- *
+ * @copyright 2018
+ * @license MIT
  */
 
 (function(window) {

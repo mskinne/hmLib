@@ -36,31 +36,28 @@ Here is the default build.josn:
   "functions": {
 
     "core": [
-
       "argToArr",
       "forEach",
       "map",
       "mapOne"
-
     ],
 
-    "class": [
-
+    "dom": [
       "addClass",
+      "attr",
       "changeClass",
       "hasClass",
+      "html",
       "removeClass",
+      "text",
       "toggleClass"
-
     ],
 
     "handler": [
-
       "click",
+      "off",
       "on"
-
     ]
-    
   }
 }
 ```

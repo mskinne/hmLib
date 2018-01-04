@@ -15,6 +15,7 @@ module.exports = function (grunt) {
     src: 'src',
     build: 'build',
     dist: 'dist',
+    docs: 'docs',
 
     devRelease: 'dist/' + templates.name + '.js',
     minRelease: 'dist/' + templates.name + '.min.js',
@@ -79,6 +80,11 @@ module.exports = function (grunt) {
       dist: {
 
         src: [ paths.dist + '/*.js', paths.dist + '/*.map' ]
+      },
+
+      docs: {
+
+        src: [ paths.docs ]
       }
     },
 
@@ -186,6 +192,7 @@ module.exports = function (grunt) {
   grunt.registerTask(
     'builddocs', 
     [
+      'clean:docs',
       'documentation:default'
     ]
   );
