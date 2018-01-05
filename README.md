@@ -55,6 +55,7 @@ Here is the default build.josn:
 
     "handler": [
       "click",
+      "focus",
       "off",
       "on"
     ]
