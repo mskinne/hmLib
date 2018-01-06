@@ -24,7 +24,7 @@ changeClass: function (classes, operation) {
           cs = cs.slice(0, j).concat(cs.slice(++j));
         }
       } else {
-        if (!cs.includes(clazz)) {
+        if (cs.indexOf(clazz) == -1) {
           cs.push(clazz);
         }
       }

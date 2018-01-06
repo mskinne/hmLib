@@ -16,7 +16,7 @@ toggleClass: function (classes) {
     var cs = el.className.split(" ");
 
     className.forEach( function (clazz) {
-      if (!cs.includes(clazz)) {
+      if (cs.indexOf(clazz) == -1) {
         cs.push(clazz);
       } else {
         var j = 0;
