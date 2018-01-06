@@ -40,7 +40,7 @@ The following built files will be placed in the ```dist/``` directory:
 ### Custom Builds
 You can build a custom version of the library by modifying the build configuration file (```dist/build.json```) and running the regular build command (```grunt build```).  By default, the build configuration file will build a version containing all the avaliable methods.
 
-Here is the default build.josn:
+Here is the default ```build.json```:
 
 ```json
 {
