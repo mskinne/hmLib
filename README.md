@@ -13,7 +13,7 @@ The following browser versions are supported:
 * Safari 6+
 * Opera 15+
 
-This list is mainly based on full support for ES5 for each browsee.  The exception is IE9 which does not have full ES5 support, but supports the features used.  Earlier versions of some browsers may work based on what ES5 features they included.
+This list is mainly based on full support for ES5 for each browser.  The exception is IE9 which does not have full ES5 support, but supports the features used.  Earlier versions of some browsers may work based on what ES5 features they included.
 
 ## Build
 
