@@ -5,11 +5,7 @@
  * @returns {object} DOM NodeList of nodes matching selector after class(es) are added
  */
 
-/*jshint -W025 */
-/*jshint -W028 */
-addClass: function (classes) {
-/*jshint +W025 */
-/*jshint +W028 */
+var addClass = function (classes) {
   var className = this.argToArr(classes);
 
   return this.forEach( function (el) {
@@ -23,4 +19,6 @@ addClass: function (classes) {
 
     el.className = cs.join(" ");
   });
-}
+};
+
+module.exports = addClass;

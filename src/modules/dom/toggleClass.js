@@ -5,11 +5,8 @@
  * @returns {object} DOM NodeList of nodes matching selector after class(es) are added
  */
 
-/*jshint -W025 */
-/*jshint -W028 */
-toggleClass: function (classes) {
-/*jshint +W025 */
-/*jshint +W028 */
+var toggleClass = function (classes) {
+
   var className = this.argToArr(classes);
 
   return this.forEach( function (el) {
@@ -29,4 +26,6 @@ toggleClass: function (classes) {
     el.className = cs.join(" ");
   });
 
-}
+};
+
+module.exports = toggleClass;

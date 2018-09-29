@@ -11,11 +11,7 @@
  * @returns {object} DOM NodeList of nodes matching selector after inner text is changed
  */
 
-/*jshint -W025 */
-/*jshint -W028 */
-text: function(text) {
-/*jshint +W025 */
-/*jshint +W028 */
+var text = function(text) {
   if (typeof text !== "undefined") {
     return this.forEach(function (el) {
       el.innerText = text;
@@ -25,4 +21,6 @@ text: function(text) {
       return el.innerText;
     });
   }
-}
+};
+
+module.exports = text;

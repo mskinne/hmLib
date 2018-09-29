@@ -11,11 +11,7 @@
  * @returns {object} DOM NodeList of nodes matching selector after inner HTML is changed
  */
 
-/*jshint -W025 */
-/*jshint -W028 */
-html: function(html) {
-/*jshint +W025 */
-/*jshint +W028 */
+var html = function(html) {
   if (typeof html !== "undefined") {
     return this.forEach(function (el) {
       el.innerHTML = html;
@@ -25,4 +21,6 @@ html: function(html) {
       return el.innerHTML;
     });
   }
-}
+};
+
+module.exports = html;

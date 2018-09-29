@@ -102,21 +102,10 @@ module.exports = function (grunt) {
       }
     },
 
-    wrap: {
-
-      functionsdefs: {
-
-        cwd: 'build/',
-        expand: true,
-        src: ['modules/**/*.js'],
-        dest: 'build/',
-        options: {
-          wrapper: function(filepath){
-            filename = filepath.replace(/([A-Za-z0-9_]*\/)*/, "");
-            filename = filename.replace(/(.js)$/, "");
-            return ['', ','];
-          }
-        }
+    browserify: {
+      dist: {
+        src: 'src/hm.js',
+        dest: paths.devRelease
       }
     },
 
@@ -138,7 +127,7 @@ module.exports = function (grunt) {
         sourceMapName: paths.sourceMapMin
       },
 
-      target: {
+      build: {
         src: [paths.devRelease],
         dest: paths.minRelease
       }
@@ -159,6 +148,21 @@ module.exports = function (grunt) {
 
   var tasks = {scope: ['devDependencies']};
   require('load-grunt-tasks')(grunt, tasks);
+
+  grunt.registerTask(
+    'build-test', 
+    [ 
+      'jshint',
+      'clean:befbuild',
+      'clean:dist',
+      'copy:build',
+      'browserify',
+      'uglify',
+      'copy:development',
+      'copy:minified',
+      'clean:afbuild'
+    ]
+  );
 
   grunt.registerTask(
     'build', 

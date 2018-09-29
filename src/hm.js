@@ -8,69 +8,34 @@
  * @license MIT
  */
 
-(function(window) {
+var domElement = {};
 
-  /**
-   * Library constructor class
-   * @class hmLib
-   * @constructor
-   * @param {(string|object)} selector a valid CSS selector
-   * @returns {object} DOM NodeList of nodes matching selector 
-   */
-  HMLib = function(selector) {
+domElement.init = require('./modules/core/init');
 
-     /**
-      * Abstracts DOM node selection to hm(selector)
-      * @param {string} selector - A valid CSS selector.
-      * @return {object} hm - An ojbect containing the selected elements.
-      */
+domElement.argToArr   = require('./modules/core/argToArr');
+domElement.forEach    = require('./modules/core/forEach');
+domElement.map        = require('./modules/core/map');
+domElement.mapOne     = require('./modules/core/mapOne');
 
-    if (selector) {
+domElement.addClass     = require('./modules/dom/addClass');
+domElement.attr         = require('./modules/dom/attr');
+domElement.changeClass  = require('./modules/dom/changeClass');
+domElement.hasClass     = require('./modules/dom/hasClass');
+domElement.html         = require('./modules/dom/html');
+domElement.removeClass  = require('./modules/dom/removeClass');
+domElement.text         = require('./modules/dom/text');
+domElement.toggleClass  = require('./modules/dom/toggleClass');
 
-      // Recursivly add library object if the scope is "window"
-      if (window === this) {
-        return new HMLib(selector);
-      }
+domElement.click  = require('./modules/handler/click');
+domElement.focus  = require('./modules/handler/focus');
+domElement.off    = require('./modules/handler/off');
+domElement.on     = require('./modules/handler/on');
 
-      var els, 
-          i = 0; // Elements array
 
-      if (typeof selector === "string") {
-        // Get all the matching element objects if the the selector is a string and set to Elements array
-        els = document.querySelectorAll(selector);
-      } else if (selector.length) {
-        // Set elements array to selector if it is NodeList
-        els = selector;
-      } else {
-        // Set elements array item to selector if it is a single Node
-        els = [selector];
-      }
+var HMLib = window.hm || function(selector){
+  var el = Object.create(domElement);
+  el.init(selector);
+  return el;
+};
 
-      // Loop over Elements array and map to library object
-      for ( ; i < els.length; i++) {
-        this[i] = els[i];
-      }
-
-      // Set library object length property
-      this.length = els.length;
-
-      // Return the library object
-      return this;
-
-    } else {
-    // Return the <html> object if no selector is specified
-      return new HMLib("html");
-    }
-
-  };
-
-  HMLib.prototype = {
-
-    // @CODE
-    // Function definitions go here
-
-  };
-
-  window.hm = HMLib;
-
-}(window));
+window.hm = HMLib;

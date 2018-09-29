@@ -6,12 +6,10 @@
  * @returns {object} NodeList of elements handler was attached to
  */
 
-/*jshint -W025 */
-/*jshint -W028 */
-on: function (event, callback) {
-/*jshint +W025 */
-/*jshint +W028 */
+var on = function (event, callback) {
   return this.forEach(function (el) {
       el.addEventListener(event, callback, false);
   });
-}
+};
+
+module.exports = on;

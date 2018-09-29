@@ -6,11 +6,7 @@
  * @returns {object} DOM NodeList of nodes matching selector after class(es) are added
  */
 
-/*jshint -W025 */
-/*jshint -W028 */
-changeClass: function (classes, operation) {
-/*jshint +W025 */
-/*jshint +W028 */
+var changeClass = function (classes, operation) {
   var className = this.argToArr(classes);
   operation = (typeof operation !== 'undefined') ?  operation : "add";
 
@@ -33,4 +29,6 @@ changeClass: function (classes, operation) {
 
     el.className = cs.join(" ");
   });
-}
+};
+
+module.exports = changeClass;

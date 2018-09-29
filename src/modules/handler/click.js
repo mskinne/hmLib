@@ -5,10 +5,8 @@
  * @returns {object} NodeList of elements click handler was attached to
  */
 
-/*jshint -W025 */
-/*jshint -W028 */
-click: function (callback) {
-/*jshint +W025 */
-/*jshint +W028 */
+var click = function (callback) {
   return this.on("click", callback);
-}
+};
+
+module.exports = click;

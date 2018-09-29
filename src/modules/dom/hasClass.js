@@ -5,11 +5,7 @@
  * @returns {boolean} whether the selected elements have a class.  If there are mutiple elements, returns true if any of the elements have the class.
  */
 
-/*jshint -W025 */
-/*jshint -W028 */
-hasClass: function (clazz) {
-/*jshint +W025 */
-/*jshint +W028 */
+var hasClass = function (clazz) {
   var className = " " + clazz + " ", 
       i = 0, 
       l = this.length;
@@ -21,4 +17,6 @@ hasClass: function (clazz) {
   }
 
   return false;
-}
+};
+
+module.exports = hasClass;

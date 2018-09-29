@@ -5,15 +5,12 @@
  * @returns {array} If data is an array, it simply returns the array, otherwise it wraps the data in an array and returns that array.
  */
 
-
-/*jshint -W025 */
-/*jshint -W028 */
-argToArr: function (data) {
-/*jshint +W025 */
-/*jshint +W028 */
+var argToArr = function (data) {
   if (Array.isArray(data)) {
     return data;
   } else {
     return [data];
   }
-}
+};
+
+module.exports = argToArr;

@@ -3,13 +3,10 @@
  * @memberof HMLib
  */
 
-/*jshint -W025 */
-/*jshint -W028 */
-focus: function (callback) {
-/*jshint +W025 */
-/*jshint +W028 */
+var focus = function (callback) {
   return this.mapOne(function(el) {
     el.focus();
   });
-  
-}
+};
+
+module.exports = focus;

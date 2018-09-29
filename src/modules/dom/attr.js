@@ -13,11 +13,7 @@
  * @returns {object} DOM NodeList of nodes matching selector after attribute is set
  */
 
-/*jshint -W025 */
-/*jshint -W028 */
-attr: function(attr, val) {
-/*jshint +W025 */
-/*jshint +W028 */
+var attr = function(attr, val) {
   if (typeof val !== "undefined") {
     return this.forEach(function (el) {
       el.setAttribute(attr, val);
@@ -27,4 +23,6 @@ attr: function(attr, val) {
       return el.getAttribute(attr);
     });
   }
-}
+};
+
+module.exports = attr;
